@@ -1,0 +1,341 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	background-color: #000;
+	background: url('teroMalhela2.png');
+}
+
+img {
+	display: block;
+	vertical-align: bottom;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+	min-width: 500px;
+	max-width: 900px;
+	background-color: #006f79;
+	font-family: Arial, sans-serif;
+	color: #cff;
+	box-shadow: 0px 0px 200px black;
+}
+
+body::after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+/* Test styles */
+h1, h2, h3, h4, h5, h6, p, li {
+	margin: 5px 0px 5px 0px;
+	line-height: 1.5em;
+}
+
+h1 {
+	text-shadow: 3px 3px 10px #004f59;
+	text-transform: capitalize;
+	font-variant: small-caps;
+}
+
+p, li {
+	text-indent: 10px;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+li {
+	margin-left: 60px;
+	padding-left: 0px;
+}
+
+ol li {
+	margin-left: 30px;
+}
+
+header img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	font-style: italic;
+}
+
+/* Navigation styles */
+nav {
+	background-color: #263;
+}
+
+nav a {
+	display: block;
+	padding: 17px 3% 17px 3%;
+	color: #efe;
+	text-decoration: none;
+	float: left;
+	font-style: normal;
+}
+
+nav a:hover {
+	background-color: #ddc;
+	color: #333;
+}
+
+nav::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+a.right {
+	float: right;
+	background-color: #254;
+}
+
+/* Main container styles */
+div#main {
+	padding: 15px;
+}
+
+div#main a {
+	color: #333;
+}
+
+div#main a:hover {
+	color: #aaa;
+}
+
+/* Article styles */
+div.picture-article {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+	background-color: #208f99;
+}
+
+div.picture-article + article, article + article, article + div.picture-article {
+	margin-top: 15px;
+}
+
+aside {
+	flex: 30%;
+	padding: 15px;
+	min-width: 200px;
+}
+
+aside img {
+	width: 100%;
+}
+
+article {
+	flex: 70%;
+	padding: 15px;
+	background-color: #208f99;
+}
+
+article h1 {
+	text-align: center;
+	color: #bef;
+	font-size: 30px;
+	margin-left: 5px;
+}
+
+article p {
+	margin-left: 5px;
+}
+
+section#vanege {
+	display: block;
+	padding: 15px;
+	background-color: #00995f;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#vanege img, h2 {
+	display: inline;
+}
+
+section#vanege img, h2 {
+	padding: 5px;
+}
+
+/* Table styles */
+table#roles {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 15px;
+}
+
+table#roles td, table#roles th {
+	font-size: 1.2em;
+	padding: 3px;
+	border: solid 2px #006f79;
+}
+
+table#roles th {
+	background-color: #4ab;
+}
+
+table#roles td {
+	background-color: #39a;
+	padding-left: 10px;
+}
+
+/* Block link styles */
+div.block-link {
+	width: 33.3334%;
+	padding: 3%;
+	text-align: center;
+	float: left;
+}
+
+div.block-link img {
+	margin: auto;
+	width: 64px;
+}
+
+div.block-link h3 {
+	width: 100%;
+	min-width: 100px;
+	margin: auto;
+	padding: 7px;
+	margin-top: 15px;
+	color: #def;
+}
+
+div.block-link::after {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+}
+
+div#steam {
+	background-color: #223;
+}
+
+div#discord {
+	background-color: #446;
+}
+
+div#telegram {
+	background-color: #235;
+}
+
+div#steam:hover, div#discord:hover, div#telegram:hover {
+	background-color: #779;
+}
+
+/* Contact/Footer styles */
+footer#contact {
+	background-color: #444;
+	text-align: center;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+footer#contact a {
+	background-color: #999;
+	font-weight: bold;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+footer#contact a:hover {
+	background-color: #555;
+}
+
+/* Gallery styles */
+section.light-blue {
+	margin: 0 auto;
+	margin-top: 25px;
+	padding: 10px;
+	background-color: #4ab;
+	border-radius: 10px;
+}
+
+section.light-blue::after {
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+}
+
+figure {
+	padding: 0;
+	margin: 1.66%;
+	display: block;
+	float: right;
+	width: 30%;
+	background-color: #128090;
+	border: solid 5px #334;
+	border-radius: 10px;
+}
+
+figure img {
+	width: 100%;
+	padding: 15px;
+}
+
+figcaption {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+	p, a, li {
+		font-size: 1.2em;
+	}
+
+	div.picture, article {
+		flex: 100%;
+	}
+
+	nav a {
+		width: 100%;
+		padding-top: 14px;
+		padding-bottom: 14px; 
+		text-align: center;
+	}
+
+	div.block-link {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	/* Fix gallery positioning */
+	figure {
+		width: 100%;
+		margin: 5px auto;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	figure:hover {
+		transform: scale(1.35, 1.35);
+	}
+}
+
+@media screen and (min-width: 850px) {
+	p {
+		margin-top: 15px;
+		line-height: 1.5em;
+	}
+
+	div.picture, article {
+		padding: 25px;
+	}
+}
